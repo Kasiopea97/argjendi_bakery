@@ -703,7 +703,7 @@
             }
         }
 
-        modal.find('.ps-modal__close, .ps-btn--close').on('click', function(e) {
+        modal.find('.ps-modal__close, .ps-btn--close, .ps-modal-close-menu-item').on('click', function(e) {
             e.preventDefault();
             $(this).closest('.ps-modal').removeClass('active');
             $("body").css('overflow-y', 'auto');
@@ -939,7 +939,7 @@
 
     $(window).on('load', function() {
         $('body').addClass('loaded');
-        subscribePopup();
+        // subscribePopup();
     });
 
 })(jQuery);
